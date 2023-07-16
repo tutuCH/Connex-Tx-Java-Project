@@ -1,6 +1,5 @@
 package com.connextx.vehicle.insurance.Controllers;
 
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.http.ResponseEntity;
@@ -15,7 +14,11 @@ import com.connextx.vehicle.insurance.models.Insurance;
 
 @RestController
 @RequestMapping(path = "api/v1/insurance")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+    "http://localhost:4200", 
+    "https://connex-tx-angular-project.vercel.app/"
+})
+
 public class InsuranceController {
 
     private final InsuranceService insuranceService;
