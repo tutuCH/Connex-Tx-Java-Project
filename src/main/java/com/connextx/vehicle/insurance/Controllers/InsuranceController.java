@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.connextx.vehicle.insurance.Services.InsuranceService;
 import com.connextx.vehicle.insurance.models.Insurance;
 
-@RestController
-@RequestMapping(path = "api/v1/insurance")
 @CrossOrigin(origins = {
     "http://localhost:4200", 
     "https://connex-tx-angular-project.vercel.app"
 })
+@RestController
+@RequestMapping(path = "api/v1/insurance")
 
 public class InsuranceController {
 
