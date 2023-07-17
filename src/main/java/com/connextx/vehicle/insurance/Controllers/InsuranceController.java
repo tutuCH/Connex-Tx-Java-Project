@@ -16,7 +16,7 @@ import com.connextx.vehicle.insurance.models.Insurance;
 @RequestMapping(path = "api/v1/insurance")
 @CrossOrigin(origins = {
     "http://localhost:4200", 
-    "https://connex-tx-angular-project.vercel.app/"
+    "https://connex-tx-angular-project.vercel.app"
 })
 
 public class InsuranceController {

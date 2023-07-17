@@ -17,10 +17,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -28,6 +24,11 @@
 			<version>2.5.3</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>2.5.3</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -40,30 +41,6 @@
 		<finalName>connextx-java</finalName>
 		<plugins>
 			<plugin>
-				<!-- <groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId> -->
-
-
-
-				<!-- <groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.13</version>
-				<executions>
-					<execution>
-					<id>default</id>
-					<goals>
-						<goal>build</goal>
-					</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<repository>my-docker-image</repository>
-					<tag>latest</tag>
-					<buildArgs>
-					<JAR_FILE>target/vehicle.jar</JAR_FILE>
-					</buildArgs>
-				</configuration>				 -->
-
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 					<version>3.1.0</version>
@@ -77,6 +54,10 @@
 					</archive>
 				</configuration>				
 			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>			
 		</plugins>
 	</build>
 
